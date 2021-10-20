@@ -34,7 +34,7 @@ class Posts(db.Model):
     updatetime = db.Column(db.DateTime())
     isactive = db.Column(db.Boolean, default=False, nullable=False)
 
-db.createall()
+db.create_all()
 
 def mail(receiver,message1):
     app.config['MAIL_SERVER']='smtp.gmail.com'
