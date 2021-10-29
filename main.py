@@ -6,7 +6,7 @@ from flask_sqlalchemy import SQLAlchemy
 
 app = Flask(__name__)
 mail=Mail(app)
-app.config['SQLALCHEMY_DATABASE_URI']='postgresql://postgres:12345678@localhost/website'
+app.config['SQLALCHEMY_DATABASE_URI']='postgresql://postgres:'password_of_database'@localhost/website'
 app.secret_key='super-secret-key'
 db = SQLAlchemy(app)
 app.config['SESSION_SQLALCHEMY_TABLE'] = 'sessions'
